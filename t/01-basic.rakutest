@@ -1,0 +1,6 @@
+use Test;
+use Acme::Test::Module::Zef;
+
+pass "replace me";
+
+done-testing;
