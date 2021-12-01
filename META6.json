@@ -16,10 +16,10 @@
   },
   "resources": [
   ],
-  "source-url": "",
+  "source-url": "https://github.com/skaji/raku-Acme-Test-Module-Zef.git",
   "tags": [
   ],
   "test-depends": [
   ],
-  "version": "0.0.1"
+  "version": "0.0.3"
 }
