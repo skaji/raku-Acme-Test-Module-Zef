@@ -1,4 +1,5 @@
 unit class Acme::Test::Module::Zef;
+use Acme::Test::Module::Zef2;
 
 
 =begin pod

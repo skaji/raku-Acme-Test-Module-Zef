@@ -12,7 +12,8 @@
   "name": "Acme::Test::Module::Zef",
   "perl": "6.d",
   "provides": {
-    "Acme::Test::Module::Zef": "lib/Acme/Test/Module/Zef.rakumod"
+    "Acme::Test::Module::Zef": "lib/Acme/Test/Module/Zef.rakumod",
+    "Acme::Test::Module::Zef2": "lib/Acme/Test/Module/Zef2.rakumod"
   },
   "resources": [
   ],
