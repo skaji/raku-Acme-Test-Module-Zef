@@ -20,4 +20,4 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: Raku/setup-raku@v1
-      - run: zef install --/test --trace Acme::Test::Module
+      - run: zef install --/test --trace TAP
