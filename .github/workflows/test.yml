@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         module:
+          - TAP:ver<0.3.8>
           - TAP:ver<0.3.9>
           - TAP:ver<0.3.10>
           - TAP:ver<0.3.11>
