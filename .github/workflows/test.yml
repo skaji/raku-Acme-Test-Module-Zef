@@ -8,12 +8,16 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        module:
-          - TAP:ver<0.3.8>
-          - TAP:ver<0.3.9>
-          - TAP:ver<0.3.10>
-          - TAP:ver<0.3.11>
+        number:
+          - "1"
+          - "2"
+          - "3"
+          - "4"
+          - "5"
+          - "6"
+          - "7"
+          - "8"
     runs-on: windows-latest
     steps:
       - uses: Raku/setup-raku@v1
-      - run: zef install --/test --trace '"${{ matrix.module }}"'
+      - run: zef install --/test --trace Acme::Test::Module
