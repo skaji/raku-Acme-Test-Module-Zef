@@ -21,4 +21,6 @@ jobs:
       - uses: Raku/setup-raku@v1
         with:
           raku-version: ${{ matrix.raku-version }}
+      - run: zef --version
+      - run: zef install --/test --trace "TAP:ver<0.3.10>"
       - run: zef install --/test --trace TAP
