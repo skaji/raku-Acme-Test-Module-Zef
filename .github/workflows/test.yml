@@ -2,25 +2,17 @@ name: test
 
 on:
   push:
-    branches:
-      - '*'
-    tags-ignore:
-      - '*'
-  pull_request:
 
 jobs:
   raku:
     strategy:
       matrix:
-        os:
-          - windows-latest
-        raku-version:
-          - 'latest'
-    runs-on: ${{ matrix.os }}
+        module:
+          - TAP:ver<0.3.9>
+          - TAP:ver<0.3.10>
+          - TAP:ver<0.3.11>
+    runs-on: windows-latest
     steps:
       - uses: Raku/setup-raku@v1
-        with:
-          raku-version: ${{ matrix.raku-version }}
       - run: zef --version
-      # - run: zef install --/test --trace Acme::Test::Module::Zef Acme::Test::Module
-      - run: zef install --/test --trace '"TAP:ver<0.3.9>"'
+      - run: zef install --/test --trace '"${{ matrix.module }}"'
