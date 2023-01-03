@@ -8,12 +8,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        module:
-          - TAP:ver<0.3.9>
-          - TAP:ver<0.3.10>
-          - TAP:ver<0.3.11>
-    runs-on: windows-latest
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: Raku/setup-raku@v1
-      - run: zef install --/test --trace --force zef
-      - run: zef install --/test --trace '"${{ matrix.module }}"'
+      - run: zef --version
+      - run: zef upgrade --/test --trace zef
