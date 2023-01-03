@@ -22,6 +22,5 @@ jobs:
         with:
           raku-version: ${{ matrix.raku-version }}
       - run: zef --version
-      - run: zef install --/test --trace Acme::Test::Module::Zef
-      - run: zef install --/test --trace '"TAP:ver<0.3.10>"'
+      - run: zef install --/test --trace Acme::Test::Module
       - run: zef install --/test --trace TAP
