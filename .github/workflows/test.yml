@@ -15,5 +15,5 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: Raku/setup-raku@v1
-      - run: zef upgrade --/test zef
+      - run: zef install --/test --trace --force zef
       - run: zef install --/test --trace '"${{ matrix.module }}"'
