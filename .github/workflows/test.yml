@@ -22,4 +22,5 @@ jobs:
       - uses: Raku/setup-raku@v1
         with:
           raku-version: "2022.07"
+      - run: zef --version
       - run: zef install --/test --trace TAP
