@@ -22,5 +22,6 @@ jobs:
       - uses: Raku/setup-raku@v1
         with:
           raku-version: "2022.07"
+      - run: git clone https://github.com/ugexe/zef.git; cd zef; raku -I. bin/zef nuke site home --/confirm; raku -I. bin/zef install .
       - run: zef --version
       - run: zef install --/test --trace TAP
