@@ -20,4 +20,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: Raku/setup-raku@v1
+        with:
+          raku-version: "2022.07-01"
       - run: zef install --/test --trace TAP
