@@ -10,7 +10,7 @@ on:
 
 jobs:
   raku:
-    name: attempt ${{ matrix.index }}
+    name: attempt ${{ matrix.attempt }}
     strategy:
       matrix:
         os:
