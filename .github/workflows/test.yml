@@ -33,6 +33,6 @@ jobs:
       - name: Run Tests
         if: matrix.os != 'windows-latest'
         run: prove6 -I. t
-      - name: Run Tests
+      - name: Run Tests (windows)
         if: matrix.os == 'windows-latest'
         run: zef test .

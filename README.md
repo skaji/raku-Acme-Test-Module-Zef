@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/skaji/raku-Acme-Test-Module-Zef/workflows/test/badge.svg)](https://github.com/skaji/raku-Acme-Test-Module-Zef/actions)
+[![Actions Status](https://github.com/skaji/raku-Acme-Test-Module-Zef/actions/workflows/test.yml/badge.svg)](https://github.com/skaji/raku-Acme-Test-Module-Zef/actions)
 
 NAME
 ====
