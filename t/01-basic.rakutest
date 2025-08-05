@@ -3,10 +3,4 @@ use Acme::Test::Module::Zef;
 
 pass "replace me";
 
-my $proc1 = run "zef", "--version";
-say $proc1;
-
-my $proc2 = run "cmd.exe", "/x/d/c", "zef", "--version";
-say $proc2;
-
 done-testing;
