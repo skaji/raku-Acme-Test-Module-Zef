@@ -22,7 +22,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v5
-      - uses: Raku/setup-raku@node24
+      - uses: Raku/setup-raku@v1
         with:
           raku-version: ${{ matrix.raku-version }}
       - name: Install Dependencies
